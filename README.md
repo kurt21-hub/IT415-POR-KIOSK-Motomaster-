@@ -38,25 +38,47 @@
    - Highlighted payable amount box.
    - Easy navigation to return to menu without losing selections.
 
-4. **Multi-Channel Payment Processing:**
-   - **Cash Payment:**
-     - Interactive on-screen numeric keypad (0–9, decimal, backspace, and clear).
-     - Digital cash register display with currency formatting.
-     - One-touch quick cash denomination buttons (*Exact*, *₱200*, *₱500*, *₱1,000*).
-     - Real-time change calculation with positive visual confirmation.
-     - Input validation and insufficient amount warnings.
-   - **QR Code Payment:**
-     - High-fidelity QR matrix display with GCash, Maya, and QRPh compatibility badges.
-     - 3-step customer payment guidance.
-   - **Credit / Debit Card Payment:**
-     - Contactless card terminal simulation.
-     - Processing feedback with animated progress bar and busy states.
+4. **Revamped Multi-Channel Payment Experience:**
+   - **Payment Channel Selection:**
+     - Interactive Payment Overview card displaying total due, item count pill, VAT-inclusive badge, and live thumbnails of ordered items.
+     - 3 rich, high-fidelity payment cards with bespoke vector SVG illustrations, channel badges, accepted network pills, and hover lift effects:
+       - **Cash Register** (Philippine Peso banknotes & coins)
+       - **QR Ph & E-Wallets** (Instant dynamic QR with BSP QR Ph standard)
+       - **Credit / Debit Card** (Contactless EMV chip & NFC tap)
+   - **Cash Payment Screen:**
+     - Digital cash register LCD display with blinking cursor and quick clear button.
+     - 5 Philippine banknote presets (*Exact*, *₱100*, *₱200*, *₱500*, *₱1,000*).
+     - Quick bill increment chips (*+₱20*, *+₱50*, *+₱100*, *+₱500*, *+₱1,000*) for fast bill stacking.
+     - Real-time change and shortfall balance calculation with color-coded feedback.
+     - Physical kiosk bill acceptor slot visual guide with animated entry indicator.
+     - Tactile 64px touchscreen numpad with backspace icon and dedicated action buttons.
+   - **National QR Ph Code Screen:**
+     - Authentic Philippine QR Ph standard terminal stand featuring the official tri-color emblem and merchant header.
+     - Scanning reticles and animated laser beam sweep across the dynamic QR code matrix.
+     - Live 5-minute session countdown timer (`04:59`) with auto-renewal and unique reference code.
+     - Compatible e-wallet badges (*GCash*, *Maya*, *ShopeePay*, *QR Ph*, *All Bank Apps*).
+     - Step-by-step customer scan instructions and one-tap "Simulate Instant App Scan & Pay" demo button.
+   - **Smart POS Contactless Card Terminal Screen:**
+     - Interactive smart POS terminal casing featuring 4 EMV contactless indicator LEDs and digital prompt screen.
+     - Realistic virtual 3D EMV card with metallic gold chip, NFC wave symbol, masked number (`•••• 4242`), and card network emblem.
+     - Radiating NFC sensor wave animations simulating real-world contactless detection.
+     - Real-time transaction processing simulation with animated card tap motion, bank authorization spinner, and live progress bar.
 
-5. **Transaction Tracking & Digital Receipt:**
-   - Generates persistent transaction numbers (`TXN-YYYY-#####`) using browser `localStorage`.
-   - Payment confirmation screen summarizing transaction details.
-   - Authentic digital thermal receipt layout with store header, timestamp, itemized breakdown, payment summary, and barcode graphic.
-   - One-tap "Start New Order" to reset the kiosk for the next customer.
+5. **Revamped Payment Success & Authentic Thermal Receipt:**
+   - **Payment Success Screen (`vSuccess`):**
+     - Animated SVG checkmark bubble with smooth pop-in and stroke draw animations.
+     - Official status pill badge (`Payment Approved • BIR Registered POS`).
+     - Modern Transaction Card featuring clear key-value alignments with distinct labels and values (no cramped text).
+     - Live order items preview strip displaying miniature product thumbnails and quantities purchased.
+     - Itemized financial summary detailing VATable Sales (Net of VAT), 12% VAT amount, and highlighted total.
+     - Dynamic Change callout card: color-coded green dispenser alert when change is due, or blue settled indicator for exact payments.
+     - Dual touchscreen actions: direct access to `"View Official Thermal Receipt"` and `"Start New Order"`.
+   - **Authentic Thermal Receipt Slip (`vReceipt`):**
+     - Simulated thermal paper slip emerging from a POS hardware dispenser slot with animated printer status LED.
+     - Realistic jagged paper tear-off sawtooth top and bottom edges.
+     - Authentic store header with BIR registration details, tax breakdown, itemized quantities, and totals.
+     - Crisp barcode graphic with transaction identifier and official customer invoice disclaimer.
+     - Built-in `"🖨️ Print Receipt Copy"` action integrating with native browser thermal printing.
 
 6. **Modern, Eye-Friendly UI Design:**
    - Clean, professional color palette with warm sunrise accents (`#ea580c`) and neutral slates.
