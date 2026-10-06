@@ -1,10 +1,10 @@
 const PRODUCTS = [
-  { id: 1, name: "Coffee", price: 45, em: "☕" },
-  { id: 2, name: "Sandwich", price: 50, em: "🥪" },
-  { id: 3, name: "Soft Drink", price: 35, em: "🥤" },
-  { id: 4, name: "Cookies", price: 25, em: "🍪" },
-  { id: 5, name: "Bottled Water", price: 20, em: "💧" },
-  { id: 6, name: "Chocolate", price: 25, em: "🍫" }
+  { id: 1, name: "Coffee", price: 45, img: "images/coffee.jpg", image: "images/coffee.jpg" },
+  { id: 2, name: "Sandwich", price: 50, img: "images/sandwich.jpg", image: "images/sandwich.jpg" },
+  { id: 3, name: "Soft Drink", price: 35, img: "images/softdrinks.jpg", image: "images/softdrinks.jpg" },
+  { id: 4, name: "Cookies", price: 25, img: "images/cookies.jpg", image: "images/cookies.jpg" },
+  { id: 5, name: "Bottled Water", price: 20, img: "images/bottledwater.jpg", image: "images/bottledwater.jpg" },
+  { id: 6, name: "Chocolate", price: 25, img: "images/chocolate.jpg", image: "images/chocolate.jpg" }
 ];
 
 const MAXQ = 99;
@@ -97,9 +97,14 @@ function lineRows() {
   }
   return L.map(i => `
     <div class="ln">
-      <div>
-        <div class="ln-name">${i.name}</div>
-        <div class="ln-unit">${money(i.price)} each</div>
+      <div class="ln-info">
+        <div class="ln-thumb-wrap">
+          <img src="${i.img}" alt="${i.name}" class="ln-thumb" loading="lazy">
+        </div>
+        <div>
+          <div class="ln-name">${i.name}</div>
+          <div class="ln-unit">${money(i.price)} each</div>
+        </div>
       </div>
       <div class="q">
         <button class="rb" data-a="dec" data-id="${i.id}" aria-label="Decrease quantity">−</button>
@@ -126,8 +131,8 @@ function vOrder() {
           return `
             <div class="pc ${q ? "sel" : ""}" data-a="add" data-id="${p.id}">
               ${q ? `<div class="badge">${q}</div>` : ""}
-              <div class="em-wrap">
-                <div class="em">${p.em}</div>
+              <div class="pc-img-wrap">
+                <img src="${p.img}" alt="${p.name}" class="pc-img" loading="lazy">
               </div>
               <div class="nm">${p.name}</div>
               <div class="pr">${money(p.price)}</div>
@@ -177,7 +182,14 @@ function vReview() {
             <tbody>
               ${items().map(i => `
                 <tr>
-                  <td>${i.name}</td>
+                  <td>
+                    <div class="review-item">
+                      <div class="review-thumb-wrap">
+                        <img src="${i.img}" alt="${i.name}" class="review-thumb" loading="lazy">
+                      </div>
+                      <span>${i.name}</span>
+                    </div>
+                  </td>
                   <td class="r">${i.qty}</td>
                   <td class="r">${money(i.price)}</td>
                   <td class="r">${money(i.sub)}</td>
