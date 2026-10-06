@@ -108,29 +108,33 @@ Then navigate to `http://localhost:8080` in your web browser.
 
 | Member Name | Degree & Year | Role |
 | :--- | :--- | :--- |
-| **Jazzine Joy Cabuyadao** | BSIT 4G | UI/UX Designer & Frontend Developer |
-| **Kurt Angelo Daquigan** | BSIT 4G | Lead Programmer & System Architect |
-| **Albea Pallado** | BSIT 4G | QA Specialist & Technical Documentor |
+| **Jazzine Joy Cabuyadao** | BSIT 4G | UI/UX Designer & System Architect |
+| **Kurt Angelo Daquigan** | BSIT 4G | QA Specialist & Technical Documentor  |
+| **Albea Pallado** | BSIT 4G | Lead Programmer & Frontend Developer |
 
 ---
 
 ## Member Contributions
 
 ### **Jazzine Joy Cabuyadao**
-* Conceptualized and implemented the kiosk design system, color palette tokens, and typography pairing using Google Fonts (*Plus Jakarta Sans*).
-* Designed the product catalog cards, interactive tray dock layout, and touchscreen navigation components in `style.css`.
-* Styled the payment method selection cards and customer notification banners to ensure generous touch targets (min. 48px).
-* Conducted accessibility and visual contrast checks to maintain pure white theme compliance and visual clarity.
+* Designed the overall UI/UX structure and visual direction of the POS kiosk system.
+* Developed the system's color palette, typography, product card layout, and touchscreen-oriented interface design.
+* Planned the arrangement and interaction flow of the product catalog, order summary, payment selection, and transaction screens.
+* Ensured interface elements use appropriate sizing, spacing, and visual hierarchy for touchscreen usability.
+* Reviewed the overall system interface to maintain a consistent and user-friendly design.
 
 ### **Kurt Angelo Daquigan**
-* Engineered the core application logic, centralized state management (`S`), and dynamic view rendering engine in `script.js`.
-* Developed the multi-channel payment architecture including cash input calculations, Philippine denomination presets, real-time change feedback, and BSP QR Ph timer lifecycle management.
-* Created the smart POS contactless EMV simulation, including payment processing states and bank authorization transitions.
-* Implemented persistent transaction numbering with `localStorage`, official thermal receipt slip generation, and window print integration.
-* Maintained source code repository integrity and folder structure synchronization.
+* Conducted functional and usability testing of the POS kiosk system to verify that major features operate correctly.
+* Tested product selection, quantity controls, item removal, subtotal and total calculations, payment methods, transaction completion, and receipt generation.
+* Verified system validation, including insufficient cash handling, invalid payment input, and transaction reset behavior.
+* Identified and documented bugs, inconsistencies, and areas requiring improvement during system testing.
+* Prepared and maintained technical documentation, including setup instructions, system specifications, testing evidence, and member contribution records.
+* Organized GitHub repository documentation and assisted in verifying commits, branches, pull requests, and development evidence.
 
 ### **Albea Pallado**
-* Curated, edited, and optimized high-resolution product photography for catalog items (`coffee.jpg`, `sandwich.jpg`, `softdrinks.jpg`, `cookies.jpg`, `bottledwater.jpg`, `chocolate.jpg`).
-* Conducted end-to-end user testing across multiple screen sizes and verified input validation (maximum item thresholds, insufficient cash alerts, invalid tendered values).
-* Authored technical documentation, system specifications, user guidance, and formatted project reports.
-* Verified cross-browser compatibility across Google Chrome, Microsoft Edge, and Mozilla Firefox.
+* Developed and maintained the core functionality of the POS kiosk application using HTML, CSS, and JavaScript.
+* Implemented product selection, cart management, quantity controls, subtotal and total calculations, and dynamic interface updates.
+* Developed the payment functionality, including cash payment calculations, insufficient cash validation, QR payment simulation, and card payment simulation.
+* Implemented transaction processing, payment-success behavior, unique transaction references, receipt generation, and new-transaction reset functionality.
+* Integrated the UI/UX designs into the functional frontend and ensured the interface responds correctly to user interactions.
+* Debugged and refactored application code to improve functionality, maintainability, and overall system performance.
