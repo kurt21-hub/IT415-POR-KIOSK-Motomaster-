@@ -23,12 +23,12 @@
 ## ✨ Key Features
 
 1. **Product Menu & Touchscreen Catalog:**
-   - Visual catalog cards with clear pricing, item names, and custom-styled icon containers.
+   - Visual catalog cards with clear pricing, item names, and high-resolution product photography matched to each item.
    - Real-time in-cart badges and quantity indicators.
    - Quick `+ Add` action directly on product tiles.
 
 2. **Interactive Order Tray (Dock):**
-   - Live order tray that displays selected items, unit prices, and subtotals.
+   - Live order tray displaying selected item thumbnails, names, unit prices, and subtotals.
    - Quantity stepper controls (`+` / `−`) with instant price recalculation.
    - Single-tap item removal.
    - Total item counter and live total amount.
@@ -79,6 +79,7 @@
 
 ## 📁 Project Architecture
 
+- **[`images/`](./images/)**: High-quality product images mapped to each catalog item (`coffee.jpg`, `sandwich.jpg`, `softdrinks.jpg`, `cookies.jpg`, `bottledwater.jpg`, `chocolate.jpg`).
 - **[`Sunrise Kiosk – Touchscreen POS.html`](./Sunrise%20Kiosk%20–%20Touchscreen%20POS.html)** / **[`index.html`](./index.html)**: Clean HTML5 semantic layout, viewport setup, font imports, and external asset links.
 - **[`style.css`](./style.css)**: Pure CSS3 styling, custom properties, white background theme, responsive layout, and transitions.
 - **[`script.js`](./script.js)**: Vanilla JavaScript engine managing catalog data, order tray state, multi-channel payment flows, change calculations, and receipt generation.
